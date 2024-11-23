@@ -1,5 +1,7 @@
 *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,52 +17,23 @@ body {
 p{
   font-size: 16px;
 }
+
+
+ 
+
  
 /* Mobile Responsive Styles */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 767px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100% !important;
-    
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .card {
-    box-sizing: border-box;
-    background-color: hsl(0, 0%, 100%);
-    width: 100%; /* Full width on small screens */
-    border-radius: 0 !important;
-   
     
-  }
-
-  .card-header {
-    margin: 0;
-    background: url("../public/assets/images/image-omelette.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover; /* Scales image proportionally */
-    min-height: 20vh;
-    width: 100%;
-    
-  }
-}
- 
-/* Mobile Responsive Styles */
-@media screen and (max-width: 500px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
-  }
-
-  .card {
-    box-sizing: border-box;
+    margin: 0 !important;
     background-color: hsl(0, 0%, 100%);
-    width: 100%; /* Full width on small screens */
+    width: 100% !important; /* Full width on small screens */
     border-radius: 0 !important;
  
  
@@ -71,12 +44,50 @@ p{
     background: url("../public/assets/images/image-omelette.jpeg");
     background-repeat: no-repeat center;
     background-size: cover; /* Scales image proportionally */
-    min-height: 20vh;
+    background-position: center center;
+    background-origin: border-box;
+    background-clip: border-box;
+    min-height: 20vh !important;
+    width: 100%;
+    
+  }
+ 
+}
+ /* Small tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10%;
+  }
+
+  .card {
+    
+    margin: 0 !important;
+    background-color: hsl(0, 0%, 100%);
+    width: 100% !important; /* Full width on small screens */
+    border-radius: 0 !important;
+ 
+ 
+  }
+
+  .card-header {
+    margin: 0 !important;
+    background: url("../public/assets/images/image-omelette.jpeg");
+    background-repeat: no-repeat center;
+    background-size: cover; /* Scales image proportionally */
+    background-position: center center;
+    background-origin: border-box;
+    background-clip: border-box;
+    min-height: 20vh !important;
     width: 100%;
     
   }
 }
- 
 
 
 .container{
@@ -95,22 +106,28 @@ line-height: 1.5;
 position: relative;
 width: 70%;
 border-radius: 25px;
+ 
 }
 
 .card-header{
   margin: 35px;
   background: url("../public/assets/images/image-omelette.jpeg");
-  background-repeat: no-repeat ;
-  background-size: 100%;
- 
-  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-origin: border-box ;
+  background-clip: border-box;
+  background-size: cover !important;
+  min-height: 40vh !important;
   border-radius: 5px;
+ 
   
 }
 .card-body{
-padding: 35px;
+padding: 35px !important;
 color: hsl(24, 5%, 18%);
 line-height: 1.5;
+ 
+ 
 }
 .card-body h1{
   font-family: 'Young-serif';
@@ -120,13 +137,11 @@ line-height: 1.5;
   font-family: 'Young-serif';
   color: hsl(14, 45%, 36%);
 }
-.card-body h1{
-  font-family: 'Outfit';
-  color: hsl(24, 5%, 18%);
-}
+ 
 
 .card-body li{
-  padding: 5px;
+  padding: 5px 5px 5px 30px;
+  margin-left: 15px;
 }
 
 .preparation {
@@ -141,11 +156,12 @@ line-height: 1.5;
   padding-bottom: 5px;
 }
 .preparation li {
-  padding: 5px;
+  padding: 5px 5px 5px 25px;
+  margin-left: 40px;
 }
 
 tr{
-  background-color: #f2f2f2;
+  border: 5px solid black !important;
   justify-content: center;
   align-items: center;
  
@@ -155,11 +171,13 @@ table {
   position: relative;
   min-width: 100%;
   padding: 20px;
+  
 }
 
 .row-design{
 padding: 10px;
 border-bottom: 2px solid  hsl(30, 10%, 34%);
+
  
 }
 
