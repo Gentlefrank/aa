@@ -12,7 +12,7 @@ function Card() {
       <div className='card-body'>
         <h1>Simple Omelette Recipe</h1>
         <p>  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p><br/>
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
         <div className='preparation'>
        <h3> Preparation time</h3>
@@ -24,7 +24,7 @@ function Card() {
 
 
 
-        </div><br/>
+        </div>
     <h2> Ingredients</h2>
  
  <ul>
@@ -33,13 +33,13 @@ function Card() {
     <li> Pepper, to taste</li>
     <li> 1 tablespoon of butter or oil</li>
     <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
- </ul><br/>
+ </ul>
 
 
 
 
 
-<hr/><br/>
+<hr/>
 
 <h2> Instructions</h2>
 <ol>
@@ -57,11 +57,11 @@ fillings. Let it cook for another minute, then slide it onto a plate. </li>
 
 <br/>
 
- <hr/><br/>
+ <hr/>
 
 <h2>Nutrition</h2>
 
-The table below shows nutritional values per serving without the additional fillings.
+<p>The table below shows nutritional values per serving without the additional fillings.</p>
  
  <table>
     <tr className='row-design'>
